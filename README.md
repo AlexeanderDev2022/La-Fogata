@@ -18,22 +18,3 @@ El sistema permite visualizar pizzas, ver detalles y realizar pedidos desde una 
 
 ---
 
-## 📁 Estructura del Proyecto
-src/
-├── main/
-│ ├── java/com/pizzeria/proyectoLafogata/
-│ │ ├── controller/
-│ │ │ └── PizzaController.java
-│ │ ├── model/
-│ │ │ └── Pizza.java
-│ │ ├── repository/
-│ │ │ └── PizzaRepository.java
-│ │
-│ ├── resources/
-│ │ ├── templates/
-│ │ │ ├── layouts/
-│ │ │ │ └── plantillas.html
-│ │ │ ├── pizzas.html
-│ │ │ ├── pizza-detalle.html
-│ │ │ └── pedido.html
-│ │ └── application.properties
