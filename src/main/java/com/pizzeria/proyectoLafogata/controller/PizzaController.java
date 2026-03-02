@@ -26,7 +26,8 @@ public class PizzaController {
     @GetMapping("/{id}")
     public String verPizza(@PathVariable Long id, Model model) {
         Pizza pizza = pizzaService.getPizzaWithPedidos(id);
-        if (pizza == null) return "redirect:/pizzas";
+        if (pizza == null)
+            return "redirect:/pizzas";
         model.addAttribute("pizza", pizza);
         model.addAttribute("pedidos", pizza.getPedidos());
         return "pizza-detalle";

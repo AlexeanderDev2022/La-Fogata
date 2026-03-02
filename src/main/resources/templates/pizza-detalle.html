@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Detalle de Pizza - La Fogata</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body class="container mt-5">
 
     <h1 th:text="${pizza.nombre}">Pizza Margarita</h1>
@@ -21,15 +23,12 @@
                     <th>Fecha</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="busqueda">
                 <tr th:each="pedido : ${pedidos}">
-                    <td th:text="${pedido.id}">1</td>
-                    <td th:text="${pedido.clienteNombre}">Juan Pérez</td>
+                    <td th:text="${pedido.idPedido}">1</td>
+                    <td th:text="${pedido.nombreCliente}" class="item-busqueda">Juan Pérez</td>
                     <td th:text="${pedido.cantidad}">2</td>
-                    <td th:text="${#dates.format(pedido.fecha, 'dd/MM/yyyy')}">27/02/2026</td>
-                </tr>
-                <tr th:if="${#lists.isEmpty(pedidos)}">
-                    <td colspan="4" class="text-center">No hay pedidos para esta pizza.</td>
+                    <td th:text="${#temporals.format(pedido.fecha, 'dd/MM/yyyy')}">27/02/2026</td>
                 </tr>
             </tbody>
         </table>
@@ -39,4 +38,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
