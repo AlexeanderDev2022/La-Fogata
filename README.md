@@ -1,6 +1,6 @@
 # 🍕 Proyecto La Fogata - Sistema de Gestión de Pizzería
 
-Aplicación web desarrollada con **Spring Boot** para la gestión de pizzas y pedidos en la pizzería *La Fogata*.  
+Aplicación web desarrollada con **Spring Boot** para la gestión de pizzas y pedidos en la pizzería _La Fogata_.  
 El sistema permite visualizar pizzas, ver detalles y realizar pedidos desde una interfaz web dinámica.
 
 ---
@@ -18,3 +18,4 @@ El sistema permite visualizar pizzas, ver detalles y realizar pedidos desde una 
 
 ---
 
+saludos
